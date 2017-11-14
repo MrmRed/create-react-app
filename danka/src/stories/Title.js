@@ -3,7 +3,7 @@ import { storiesOf, action, linkTo } from '@storybook/react';
 import Person from '../Person/Person';
 
 storiesOf('Person', module)
-  .add('with text', () => (
+  .add('prvi test', () => (
     <Person name="Danka" age="29">Hello, I'm a Person component </Person>
   ))
   .add('with some emoji', () => (
