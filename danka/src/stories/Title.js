@@ -1,8 +1,11 @@
 import React from 'react';
 import { storiesOf, action, linkTo } from '@storybook/react';
-import Title from '../App';
+import Person from '../Person/Person';
 
-storiesOf('App', module)
+storiesOf('Person', module)
   .add('with text', () => (
-    <Title>Hello, I'm a Title component</Title>
+    <Person name="Danka" age="29">Hello, I'm a Person component </Person>
+  ))
+  .add('with some emoji', () => (
+    <button onClick={action('clicked')}>😀 😎 👍 💯</button>
   ));
